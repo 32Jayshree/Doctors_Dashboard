@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="sidebar">
+            <div class="selected-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-1x2-fill" viewBox="0 0 16 16">
+                <path d="M0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1zm0 9a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1z"/>
+                </svg>
+            </div>
+            <div class="other-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                </svg>
+            </div>
+            <div class="other-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                </svg>
+            </div>
+            <div class="other-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16">
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5"/>
+                </svg>  
+            </div>
+            <div class="other-icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
+                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0m2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755"/>
+                </svg>
+            </div>
+        </div>
+        <div class="main">
+
+            <nav>
+                <div class="navbar-content">
+                    <div class="search-bar-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                        <p>Search</p>
+                    </div>
+                    <div class="navbar-right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+                        </svg>
+                    <div class="navbar-right-profile">
+                        <img src="doc.png" alt="">
+                        <p>Dr.Loki Laufeyson</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                        </svg>
+                    </div>
+
+                    </div>
+                </div>
+            </nav>
+
+            <div class="dashboard-content">
+                <div class="left-section">
+                    <div class="out-card1">
+                        <div class="history-header">
+                            <h4>Incoming Patient History</h4>
+                            <div class="history-header-right">
+                                <p>Weekly</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="history-content">
+                            <div class="patient-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
+                                    <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001"/>
+                                </svg>
+                                <div class="patient-card-right">
+                                    <h1>1215</h1>
+                                    <p>Consultations</p>
+                                </div>
+                            </div>
+                            <div class="patient-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+                                    <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+                                </svg>
+                                <div class="patient-card-right">
+                                    <h1>345</h1>
+                                    <p>In Progress</p>
+                                </div>                               
+                            </div>
+                            <div class="patient-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                                </svg>
+                                <div class="patient-card-right">
+                                    <h1>93</h1>
+                                    <p>In Review</p>
+                                </div>                                 
+                            </div>
+                            <div class="patient-card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                                </svg>
+                                <div class="patient-card-right">
+                                    <h1>71</h1>
+                                    <p>Pending</p>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="out-card2">
+                        <div class="booking-header">
+                            <h4>Booking Rate</h4>
+                            <div class="booking-header-right">
+                                <p>Weekly</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <div class="booking-content">
+                            <div class="booking-info">
+                                <div class="booking-info-1">
+                                    <h1>58%</h1>
+                                    <p>Your Total Patient<br>on Friday</p>   
+                                </div>
+                                <div class="booking-info-2">
+                                    <h3>6% ↗</h3>
+                                    <p>Your booking rate is 6% higher<br>than yesterday</p>
+                                </div>
+                            </div>
+                        
+                            <div class="booking-chart">
+                                <div class="chart-y-axis">
+                                    <span>100</span>
+                                    <span>80</span>
+                                    <span>60</span>
+                                    <span>40</span>
+                                    <span>20</span>
+                                </div>
+                                <div class="chart-main">
+                                    <div class="chart-grid">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="bars">
+                                        <div class="bar-column">
+                                            <div class="bar" style="height: 45%;"></div>
+                                            <span>Sun</span>
+                                        </div>
+                                        <div class="bar-column">
+                                            <div class="bar" style="height: 60%;"></div>
+                                            <span>Mon</span>
+                                        </div>
+                                        <div class="bar-column">
+                                            <div class="bar" style="height: 50%;"></div>
+                                            <span>Tue</span>
+                                        </div>
+                                        <div class="bar-column">
+                                            <div class="bar" style="height: 70%;"></div>
+                                            <span>Wed</span>
+                                        </div>
+                                        <div class="bar-column">
+                                            <div class="bar friday-bar" style="height: 90%;"></div>
+                                            <span>Fri</span>
+                                        </div>
+                                        <div class="bar-column">
+                                            <div class="bar" style="height: 55%;"></div>
+                                            <span>Sat</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="out-card3">
+                        <div class="calender-header">
+                            <h4>My Schedule</h4>
+                            <div class="calender-header-right">
+                                <p>Weekly</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                                </svg> 
+                            </div>
+                        </div>
+                        <div class="calender-mid">
+                            <div class="calender-sun">
+                                <h2>12</h2>
+                                <p>SUN</p>
+                            </div>
+                            <div class="calender-mon">
+                                <h2>13</h2>
+                                <p>MUN</p>
+                            </div>
+                            <div class="calender-tue">
+                                <h2>14</h2>
+                                <p>TUE</p>
+                            </div>
+                            <div class="calender-wed">
+                                <h2>14</h2>
+                                <p>WED</p>
+                            </div>
+                            <div class="calender-thu">
+                                <h2>15</h2>
+                                <p>THU</p>
+                            </div>
+                            <div class="calender-fri">
+                                <h2>16</h2>
+                                <p>FRI</p>
+                            </div>
+                            <div class="calender-sat">
+                                <h2>17</h2>
+                                <p>SAT</p>
+                            </div>
+                        </div>
+                        <div class="calender-bottom">
+                            <div class="line-1">
+                                <p>Notes : </p>
+                            </div>
+                            <div class="line-2">
+
+                            </div>
+                            <div class="line-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="right-top-card">
+                        <div class="doctor-info">
+                            <div class="weather">
+                                <span>☁</span>
+                                <p>24°C</p>
+                            </div>
+                            <p class="greeting">Good Morning!</p>
+                            <h3>Dr. Loki Lufeyson</h3>
+                            <p class="speciality">Psychiatrist</p>
+                        </div>
+
+                        <div class="patient-stat">
+                            <div class="patient-circle">
+                                <div class="patient-circle-inner">
+                                    <h2>784</h2>
+                                    <p>Patients</p>
+                                </div>
+                            </div>
+
+                            <div class="gender-info">
+                                <div>
+                                    <span class="male-dot"></span>
+                                    <p>Male</p>
+                                </div>
+
+                                <div>
+                                    <span class="female-dot"></span>
+                                    <p>Female</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="right-bottom-card">
+                        <div class="list-header">
+                            <h4>Your Patients Today</h4>
+                            <div class="list-header-right">
+                                <p>Weekly</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+                                </svg> 
+                            </div>
+                        </div>
+                        <div class="list-bottom">
+                        <div class="patient-row">
+                            <div class="list-num">08:00</div>
+                            <div class="list-name">
+                                <img src="nat.png" alt="">
+                                <p>Natasha Romanoff</p>
+                            </div>
+
+                        </div>
+                        <div class="patient-row">
+                            <div class="list-num">09:00</div>
+                            <div class="list-name">
+                                <img src="steve.png" alt="">
+                                <p>Steve Rogers</p></div>
+
+                        </div>
+                        <div class="patient-row">
+                            <div class="list-num">10:00</div>
+                            <div class="list-name">
+                                <img src="bucky.png" alt="">
+                                <p>Bucky Barnes</p>
+                            </div>
+                                
+                        </div>
+                        <div class="patient-row">
+                            <div class="list-num">11:00</div>
+                            <div class="list-name">
+                                <img src="tony.png" alt="">
+                                <p>Toney Stark</p>
+                            </div>
+                        </div>
+                        <div class="patient-row">
+                            <div class="list-num">12:00</div>
+                            <div class="list-name">
+                                <img src="thor.png" alt="">
+                                <p>Thor Odinson</p>
+                            </div>
+                        </div>
+                        <div class="patient-row">
+                            <div class="list-num">01:00</div>
+                            <div class="list-name">
+                                <img src="clint.png" alt="">
+                                <p>Clint Barton</p>
+                            </div>
+                        </div>
+                        <div class="patient-row">
+                            <div class="list-num">02:00</div>
+                            <div class="list-name">
+                                <img src="wanda.png" alt="">
+                                <p>Wanda Maximoff</p>
+                            </div>
+                        </div>
+                        <div class="patient-row">
+                            <div class="list-num">03:00</div>
+                            <div class="list-name">
+                                <img src="yelena.png" alt="">
+                                <p></p>Yelena</p>
+                            </div>
+                        </div>
+                        <div class="patient-row">
+                            <div class="list-num">04:00</div>
+                            <div class="list-name">
+                                <img src="strange.png" alt="">
+                                <p>Stephen Strange</p>
+                            </div>
+                        </div>
+                        <div class="patient-row">
+                            <div class="list-num">05:00</div>
+                            <div class="list-name">
+                                <img src="mobius.png" alt="">
+                                <p>Mobious</p>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
